@@ -3,7 +3,7 @@
 A modern and responsive personal portfolio website built to showcase web development projects and skills.
 
 ---
-## 📌 Features
+##  Features
 - Responsive design (mobile friendly)
 - Clean and modern UI
 - Smooth scrolling navigation
@@ -11,7 +11,7 @@ A modern and responsive personal portfolio website built to showcase web develop
 - Skills section with categorized technologies
   ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 - HTML
 - CSS
 - Bootstrap
