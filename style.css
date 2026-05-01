@@ -37,21 +37,11 @@ body{
   position:relative;
   transition:0.3s;
 } 
- /* .navbar{
-  position:fixed;
-  top:0;
-  width:100%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 10%;
-  background:#000;
-  z-index:1000;
-} */
+ 
 
 /* LOGO */
 .logo img{
-  width:50px;   /* adjust if needed */
+  width:50px;   
 }
 
 /* MENU */
@@ -82,6 +72,30 @@ body{
   transition:0.3s;
 }
 
+
+/* HERO MOBILE FIX */
+@media(max-width:768px){
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+    height:auto;
+    padding:120px 20px 60px;
+  }
+
+  .hero-left h1{
+    font-size:32px;
+  }
+
+  .hero-right{
+    margin-top:30px;
+  }
+
+  .image-circle{
+    width:220px;
+    height:220px;
+  }
+}
 /* MOBILE VIEW */
 @media(max-width:768px){
 
