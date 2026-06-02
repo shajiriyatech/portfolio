@@ -12,19 +12,30 @@ body{
 }
 
 /* NAVBAR */
+/* NAVBAR */
 .navbar{
   width:100%;
-  padding:20px 0;
+  padding:18px 8%;
   position:fixed;
   top:0;
   left:0;
   display:flex;
-  justify-content:center;
-  background:rgba(0,0,0,0.6);
+  align-items:center;
+  justify-content:space-between;
+  /* background:rgba(0,0,0,0.6); */
+  background: transparent;
   backdrop-filter:blur(10px);
   z-index:1000;
+  box-sizing:border-box;
 }
 
+/* LOGO */
+.logo img{
+  width:100px;
+  display:block;
+}
+
+/* MENU CENTER */
 .menu{
   display:flex;
   gap:40px;
@@ -34,29 +45,13 @@ body{
   text-decoration:none;
   color:#fff;
   font-size:16px;
-  position:relative;
-  transition:0.3s;
-} 
- 
-
-/* LOGO */
-.logo img{
-  width:50px;   
-}
-
-/* MENU */
-.menu a{
-  margin:0 15px;
-  text-decoration:none;
-  color:#fff;
   transition:0.3s;
 }
-
-
 
 .menu a:hover{
   color:#d4af37;
 }
+
 /* HAMBURGER */
 .hamburger{
   display:none;
@@ -72,41 +67,21 @@ body{
   transition:0.3s;
 }
 
-
-/* HERO MOBILE FIX */
-@media(max-width:768px){
-
-  .hero{
-    flex-direction:column;
-    text-align:center;
-    height:auto;
-    padding:120px 20px 60px;
-  }
-
-  .hero-left h1{
-    font-size:32px;
-  }
-
-  .hero-right{
-    margin-top:30px;
-  }
-
-  .image-circle{
-    width:220px;
-    height:220px;
-  }
-}
-/* MOBILE VIEW */
+/* MOBILE */
 @media(max-width:768px){
 
   .hamburger{
     display:flex;
   }
 
+  .logo img{
+    width:55px;
+  }
+
   .menu{
     position:absolute;
-    top:70px;
-    right:0;
+    top:80px;
+    left:0;
     width:100%;
     background:#000;
     flex-direction:column;
@@ -120,12 +95,10 @@ body{
     margin:15px 0;
   }
 
-  /* SHOW MENU */
   .menu.active{
     display:flex;
   }
 }
-
 /* HERO */
 .hero{
   height:100vh;
