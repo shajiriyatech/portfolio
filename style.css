@@ -212,7 +212,29 @@ body{
   50%{transform:translateY(-15px);}
   100%{transform:translateY(0);}
 }
+/* HERO MOBILE FIX */
+@media(max-width:768px){
 
+  .hero{
+    flex-direction:column;
+    text-align:center;
+    height:auto;
+    padding:120px 20px 60px;
+  }
+
+  .hero-left h1{
+    font-size:32px;
+  }
+
+  .hero-right{
+    margin-top:30px;
+  }
+
+  .image-circle{
+    width:220px;
+    height:220px;
+  }
+}
  .about{
   padding:100px 10%;
   background:#000;
